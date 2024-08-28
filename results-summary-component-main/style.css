@@ -1,0 +1,214 @@
+
+html{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    font-optical-sizing: auto;
+}
+
+@media only screen and (min-width: 741px)  {
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        min-width: 40em;
+        margin: auto;
+        margin-top: 6em;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+    }
+}
+
+@media only screen and (max-width: 740px)  {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        min-width: 20em;
+        margin: auto;
+        margin-top: 6em;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+    }
+}
+
+.card{
+    /* border: 1px solid red; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    /* min-width: 20em;
+    max-width: 40em; */
+    margin: auto;
+    margin-top: 6em;
+    margin-bottom: 6em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+/* ///////////RESULTS CARD////////////// */
+
+.card .result-card {
+    /* border: 1px solid red; */
+    width: 50%;
+    min-width: 20em;
+    text-align: center;
+    color: hsl(221, 100%, 96%);
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+}
+
+
+.card .result-card .text-container .word {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.card .result-card .number-container{
+    border-radius: 50%;
+    margin: auto;
+    width: 10em;
+    height: 10em;
+    padding: 1em;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.card .result-card .number-container .number-big{
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 80%;
+    margin: auto;
+    padding-top: 25%;
+}
+
+.card .result-card .number-container .number-small {
+    margin-top: 6px;
+}
+
+.card .result-card .text2-container .text-big{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.card .result-card .text2-container .text-small{
+    font-size: .9em;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+/* ///////////SUMMARY CARD////////////// */
+
+
+.card .summary-card {
+    /* border: 1px solid red; */
+    width: 50%;
+    min-width: 20em;
+    text-align: center;
+}
+
+.card .summary-card .word-container {
+    /* border: 1px solid red; */
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    font-weight: bold;
+}
+
+.card .summary-card .score-container{
+    /* border: 1px solid red; */
+    width: 75%;
+    margin: auto;
+}
+
+.card .summary-card .score-container .icon-container img{
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.card .summary-card .score-container .letter{
+    font-weight: bold;
+}
+
+.card .summary-card .score-container .reaction-container{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-bottom: .8em;
+    border-radius: 15px;
+    background-color: hsl(0, 100%, 67%, 0.2);
+}
+.card .summary-card .score-container .reaction-container .letter{
+    color: hsl(0, 100%, 67%);;
+}
+
+.card .summary-card .score-container .memory-container{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-bottom: .8em;
+    border-radius: 15px;
+    background-color: hsl(39, 100%, 56%, 0.2);
+}
+.card .summary-card .score-container .memory-container .letter{
+    color: hsl(39, 100%, 56%);
+}
+
+.card .summary-card .score-container .verbal-container{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-bottom: .8em;
+    border-radius: 15px;
+    background-color: hsl(166, 100%, 37%, 0.2);
+}
+.card .summary-card .score-container .verbal-container .letter{
+    color: hsl(166, 100%, 37%);
+}
+
+.card .summary-card .score-container .visual-container{
+    display: flex;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    background-color: hsl(234, 85%, 45%, 0.2);
+}
+.card .summary-card .score-container .visual-container .letter{
+    color: hsl(234, 85%, 45%);
+}
+
+.card .summary-card .score-container .number-container{
+    margin: auto;
+    margin-right: 1em;
+}
+
+/* ///////////BUTTON CARD////////////// */
+
+.card .summary-card .button-container{
+    /* border: 1px solid red; */
+    width: 75%;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 50px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+    transition: 0.4s;
+}
+
+.card .summary-card .button-container .button{
+    /* border: 1px solid red; */
+    padding: 1em;
+}
+
+.card .summary-card .button-container:hover {
+    background-color: hsl(224, 30%, 27%, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card .summary-card .button-container:active {
+    transform: translateY(2px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
